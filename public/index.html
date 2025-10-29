@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🛍️ Product Manager</h1>
+
+  <section id="add-section">
+    <h2>Add Product</h2>
+    <form id="addForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="text" id="description" placeholder="Description" />
+      <input type="number" id="price" placeholder="Price" required />
+      <input type="text" id="tags" placeholder="Tags (comma separated)" />
+      <button type="submit">Add</button>
+    </form>
+  </section>
+
+  <hr>
+
+  <section id="search-section">
+    <h2>Search Products</h2>
+    <input type="text" id="search" placeholder="Search by name..." />
+    <button id="btnSearch">Search</button>
+
+    <ul id="result"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
